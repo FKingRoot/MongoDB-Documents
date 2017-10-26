@@ -1,0 +1,19 @@
+1、官网下载MongoDB 
+mongodb-win32-x86_64-2008plus-ssl-3.4.4-signed.msi 
+2、直接双击安装、自定义安装到D盘下 
+目录为 D:\MongoDB\Server\3.4 
+3、在F盘新建文件夹mongodb，并在mongodb下新建data、logs文件夹，并在logs文件下新建 mongo.log文件。 
+4、在D:\MongoDB\Server\3.4下新建mongo.conf文件。 
+需要注意的是里面的空格不能用tab键和每个字母的大小写 
+文件内容为：见mongo.conf文件。
+5、安装MongoDB服务 
+以管理员身份启动dos命令窗口，注意双引号 
+“D:\MongoDB\Server\3.4\bin\mongod.exe” –config “D:\MongoDB\Server\3.4\mongo.conf” –install –serviceName “MongoDB” 
+6、启动、停止或移除MongoDB服务 
+net start MongoDB 
+net stop MongoDB 
+“D:\MongoDB\Server\3.4\bin\mongod.exe” –remove 
+7、修改环境变量添加 
+D:\MongoDB\Server\3.4\bin 
+8、启动MongoDB 
+命令行直接输入mongo
