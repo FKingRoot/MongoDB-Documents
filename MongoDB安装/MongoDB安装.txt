@@ -17,3 +17,5 @@ net stop MongoDB
 D:\MongoDB\Server\3.4\bin 
 8、启动MongoDB 
 命令行直接输入mongo
+如果修了端口号 则应该为mongo 192.168.5.122:28106/wdt
+因为mongo默认为27017
